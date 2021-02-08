@@ -1,4 +1,4 @@
-# smart_bin_neural_netw
+# Okos kuka Neurális hálózat
 
 
-Developing a smart waste bin.
+Okos kuka létrehozása és szemét felismerése neurális hálózattal.
