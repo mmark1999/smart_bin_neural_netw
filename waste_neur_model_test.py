@@ -26,19 +26,13 @@ model = tf.keras.models.Sequential()
 
 model.add(tf.keras.layers.Flatten())
 
-model.add(tf.keras.layers.Dense(300, activation=tf.nn.relu))
+model.add(tf.keras.layers.Dense(200, activation=tf.nn.relu))
 
-model.add(tf.keras.layers.Dense(300, activation=tf.nn.relu))
+model.add(tf.keras.layers.Dense(200, activation=tf.nn.sigmoid))
 
-model.add(tf.keras.layers.Dense(300, activation=tf.nn.relu))
+model.add(tf.keras.layers.Dense(200, activation=tf.nn.relu))
 
-model.add(tf.keras.layers.Dense(300, activation=tf.nn.relu))
-
-model.add(tf.keras.layers.Dense(300, activation=tf.nn.relu))
-
-model.add(tf.keras.layers.Dense(300, activation=tf.nn.relu))
-
-model.add(tf.keras.layers.Dense(2, activation=tf.nn.softmax))
+model.add(tf.keras.layers.Dense(3, activation=tf.nn.softmax))
 
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',

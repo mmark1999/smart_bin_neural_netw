@@ -6,16 +6,16 @@ from tqdm import tqdm
 import random
 import pickle
 
-DATADIR = "dataset_2"
+DATADIR = "teach"
 
-CATEGORIES = ["metal", "plastic"]
+CATEGORIES = ["metal", "plastic","paper"]
 
 for category in CATEGORIES:  # do dogs and cats
     path = os.path.join(DATADIR,category)  # create path to dogs and cats
     for img in os.listdir(path):  # iterate over each image per dogs and cats
         img_array = cv2.imread(os.path.join(path,img) ,cv2.IMREAD_GRAYSCALE)  # convert to array
         plt.imshow(img_array, cmap='gray')  # graph it
-        #plt.show()  # display!
+        plt.show()  # display!
 
         break  # we just want one for now so break
     break  #...and one more!
