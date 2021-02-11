@@ -11,6 +11,9 @@ from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
 import numpy as np
 
+my_devices = tf.config.experimental.list_physical_devices(device_type='CPU')
+tf.config.experimental.set_visible_devices(devices= my_devices, device_type='CPU')
+
 model = load_model('my_model.h5')
 
 (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
@@ -52,9 +55,11 @@ def plot_value_array(i, predictions_array, true_label):
   thisplot[predicted_label].set_color('red')
   thisplot[true_label].set_color('blue')
 
-i = 50
+i = 258
+#i=145
 predictions = model.predict(test_images[i:i+1])
 print(predictions)
+
 
 plt.figure(figsize=(6,3))
 plt.subplot(1,2,1)
