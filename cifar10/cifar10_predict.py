@@ -11,8 +11,6 @@ from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
 import numpy as np
 
-my_devices = tf.config.experimental.list_physical_devices(device_type='CPU')
-tf.config.experimental.set_visible_devices(devices= my_devices, device_type='CPU')
 
 model = load_model('my_model.h5')
 
