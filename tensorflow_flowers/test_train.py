@@ -104,7 +104,7 @@ model.compile(optimizer='adam',
 
 model.summary()
 
-epochs=
+epochs= 15
 history = model.fit(
   train_ds,
   validation_data=val_ds,
@@ -133,4 +133,4 @@ plt.legend(loc='upper right')
 plt.title('Training and Validation Loss')
 plt.show()
 
-model.save('model.h5')
+model.save('model.model')
