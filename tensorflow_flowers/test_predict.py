@@ -20,7 +20,7 @@ batch_size = 32
 img_height = 180
 img_width = 180
 
-model = load_model('model.h5')
+model = load_model('model.h5') # ez a modell neve !!! 
 
 sunflower_path = './img/can.jpg'
 
