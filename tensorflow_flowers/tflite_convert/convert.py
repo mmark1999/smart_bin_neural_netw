@@ -5,5 +5,5 @@ converter = tf.lite.TFLiteConverter.from_saved_model('E:/tflite_convert') # path
 tflite_model = converter.convert()
 
 # Save the model.
-with open('model.tflite', 'wb') as f:
+with open('model2.tflite', 'wb') as f:
   f.write(tflite_model)
